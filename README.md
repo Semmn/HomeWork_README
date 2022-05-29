@@ -43,5 +43,42 @@
    |---|---------|
    |PID|프로세스 ID (PID)|
    |USER|프로세스를 실행시킨 사용자 ID|
-   |PRI|
+   |PRI|프로세스의 우선순위 (priority)|
+   |NI|NICE값. 일의 nice value 값으로, 마이너스를 가지는 nice value가 우선순위가 높음|
+   |VIRT|가상 메모리의 사용량(SWAP + RES)|
+   |RES|현재 페이지가 상주하고 있는 크기 (Resident Size)|
+   |SHR|분할된, 페이지 프로세스에 의해 사용된 메모리를 나눈 메모리의 총합|
+   |S|프로세스의 상태S-Sleeping, R-Running, W-Swapped out process, Z-Zombies|
+   |%CPU|프로세스가 사용하는 CPU 사용률|
+   |%MEM|프로세스가 사용하는 메모리 사용률|
+   |COMMAND|실행된 명령어|
+   
+   |top 실행 후 명령어|설명|
+   |---|---------|
+   |Shift + p|CPU 사용률이 높은 프로세스 순서대로 표시|
+   |Shift + m|메모리 사용률이 높은 프로세스 순서대로 표시|
+   |Shift + t|프로세스가 돌아가고 있는 시간 순서대로 표시|
+   |-k|프로세스 kill, -k입력 후 종료할 PID 입력. signal을 입력하라고 하면 kill signal인 9를 입력|
+   |-a|메모리 사용률에 따라 정렬|
+   |-b|batch 모드 작동|
+   |-c|명령행/프로그램 이름 토글|
+   |-d|지연 시간 간격은 다음과 같다. ss.tt (seconds.tenths)|
+   |-h|도움말|
+   |-H|쓰레드 토글|
+   |-i|유휴 프로세스 토글|
+   |-m|VIRT/USED 토글|
+   |-M|메모리 유닛 탐지|
+   |-n|반복 횟수 제한|
+   |-P|PID를 다음과 같이 모니터: -PN1 -PN2 ...|
+   |-s|보안모드 작동|
+   |-S|누적 시간 모드 토글|
+   |-u|사용자별 모니터링|
+   |-U|사용자별 모니터링|
+   |-v|version 표시|
+   |space bar|refresh|
+   |1(숫자 1)|cpu core별로 사용률을 보여줌|
+   
+   ![linux_top](https://user-images.githubusercontent.com/104362407/170895791-e203ca61-81f0-42f5-b2b3-e3bd57411a1f.png)
 
+   
+2) 
