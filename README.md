@@ -164,7 +164,19 @@
 
 ***
 
-4) kill: 프로세스에 시그널을 보내는 명령어이다. kill -l을 통해 kill 시그널 리스트를 확인가능하다.
+4) kill: 프로세스에 **시그널**을 보내는 명령어이다. kill -l을 통해 kill 시그널 리스트를 확인가능하다.
+
+|주요 시그널|영어|설명|
+|---|------|---------|
+|SIGHUP|hang up|세션이 종료될 때 시스템이 내리는 시그널|
+|SIGINT|Interrupt|Ctrl + c, 종료 요청 시그널|
+|SIGKILL|kill|강제 종료 시그널
+|SIGSEGV|Segment Violation|메모리 침범이 일어날 때 시스템이 내보내는 시그널|
+|SIGTERM|Terminate|기본 값, 종료 요청 시그널|
+|SIGTSTP|Temporary Stop|Ctrl+z 일시 중지 요청 시그널|
+   
+
+***
 
 
 
