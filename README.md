@@ -79,6 +79,8 @@
    |1(숫자 1)|cpu core별로 사용률을 보여줌|
    
    ![linux_top](https://user-images.githubusercontent.com/104362407/170895791-e203ca61-81f0-42f5-b2b3-e3bd57411a1f.png)
+   
+   [top](https://ironmask84.tistory.com/355)
 
 ***   
    
@@ -130,9 +132,28 @@
    |NI|nice 우선순위 번호|
    
    ![linux_ps_all](https://user-images.githubusercontent.com/104362407/170896649-822d3125-37bc-42aa-ab59-8a092992c394.png)
-
+   
+   [ps](https://jhnyang.tistory.com/268)
    
 ***
 
-3)
+3) jobs: jobs 명령어는 **작업의 상태**를 표시하는 명령어이다. 현재 쉘 세션에서 실행시킨 백그라운드 작업의 목록이 출력되며, 각 작업하는 번호가 뭍어 있어 kill 명령어 뒤에
+"%번호"등으로 사용할 수 있다.
+
+백그라운드 작업의 상태값
+
+|상태|설명|
+|---|---------|
+|Running|작업이 계속 진행중임|
+|Done|작업에 완료되어 0을 반환|
+|Done(Code)|작업이 종료되었으며, 0이 아닌 코드를 반환|
+|Stopped|작업이 일시 중단됨|
+|Stopped SIGTSTP|SIGTSTP 시그널이 작업을 일시 중단시킴|
+|Stopped SIGSTOP|SIGSTOP 시그널이 작업을 일시 중단시킴|
+|Stopped SIGTTIN|SIGTTIN 시그널이 작업을 일시 중단시킴|
+|Stopped SIGTTOU|SIGTTOU 시그널이 작업을 일시 중단시킴|
+
+|옵션|설명|
+
+
 
