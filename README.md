@@ -166,30 +166,38 @@
 
 4) kill: 프로세스에 **시그널**을 보내는 명령어이다. kill -l을 통해 kill 시그널 리스트를 확인가능하다.
 
-|주요 시그널|영어|설명|
-|---|------|---------|
-|1) SIGHUP|hang up|세션이 종료될 때 시스템이 내리는 시그널|
-|2) SIGINT|Interrupt|Ctrl + c, 종료 요청 시그널|
-|3) SIGQUIT|QUIT|키보드로부터 오는 실행 중지 시그널|
-|4) SIGILL|ILL|illegal instruction의 약자. 잘못된 명령어를 사용했을 때 발생함|
-|5) SIGTRAP|TRAP|trace(추적), breakpoint(중지점)에서 TRAP가 발생할 때|
-|6) SIGABRT (ABRT)|abort|비정상종료 함수에 의해 발생함|
-|7) SIGBUS||메모리 접근 에어리 발생하는 시그널|
-|9) SIGKILL|kill|강제 종료 시그널
-|11) SIGSEGV|Segment Violation|메모리 침범이 일어날 때 시스템이 내보내는 시그널|
-|15) SIGTERM|TERM|Terminate의 약자로 가능한 정상 종료시키는 시그널로 kill명령의 기본 시그널이다|
-|17) SIGCHLD|child|자식 프로세스가 stop되거나 종료되었을 때 부모에게 전달되는 신호|
-|18) SIGCONT(CONT)|Continue|STOP 시그널에 의해 정지된 프로세스를 다시 실행 시킬 때 사용됨|
-|19) SIGSTOP (STOP)|STOP|터미널에서 입력된 정지 시그널. SIGCONT로 재실행시킬 수 있음|
-|20) SIGTSTP|Temporary Stop|Ctrl+z 일시 중지 요청 시그널|
-|29) SIGIO|I/O|비동기 입출력이 발생했을 경우|
+   |주요 시그널|영어|설명|
+   |---|------|---------|
+   |1) SIGHUP|hang up|세션이 종료될 때 시스템이 내리는 시그널|
+   |2) SIGINT|Interrupt|Ctrl + c, 종료 요청 시그널|
+   |3) SIGQUIT|QUIT|키보드로부터 오는 실행 중지 시그널|
+   |4) SIGILL|ILL|illegal instruction의 약자. 잘못된 명령어를 사용했을 때 발생함|
+   |5) SIGTRAP|TRAP|trace(추적), breakpoint(중지점)에서 TRAP가 발생할 때|
+   |6) SIGABRT (ABRT)|abort|비정상종료 함수에 의해 발생함|
+   |7) SIGBUS||메모리 접근 에어리 발생하는 시그널|
+   |9) SIGKILL|kill|강제 종료 시그널
+   |11) SIGSEGV|Segment Violation|메모리 침범이 일어날 때 시스템이 내보내는 시그널|
+   |15) SIGTERM|TERM|Terminate의 약자로 가능한 정상 종료시키는 시그널로 kill명령의 기본 시그널이다|
+   |17) SIGCHLD|child|자식 프로세스가 stop되거나 종료되었을 때 부모에게 전달되는 신호|
+   |18) SIGCONT(CONT)|Continue|STOP 시그널에 의해 정지된 프로세스를 다시 실행 시킬 때 사용됨|
+   |19) SIGSTOP (STOP)|STOP|터미널에서 입력된 정지 시그널. SIGCONT로 재실행시킬 수 있음|
+   |20) SIGTSTP|Temporary Stop|Ctrl+z 일시 중지 요청 시그널|
+   |29) SIGIO|I/O|비동기 입출력이 발생했을 경우|
 
-![linux_kill](https://user-images.githubusercontent.com/104362407/170897253-263aff0b-95ed-4707-abdd-a9c27f4223eb.png)
+   ![linux_kill](https://user-images.githubusercontent.com/104362407/170897253-263aff0b-95ed-4707-abdd-a9c27f4223eb.png)
 
-[kill](https://frogand.tistory.com/69)
-[kill2](https://jhnyang.tistory.com/143)
+   [kill](https://frogand.tistory.com/69)
+   [kill2](https://jhnyang.tistory.com/143)
 
 ***
+***
 
++*Vim에서 Macro(매크로) 사용하는 방법.
+1) 매크로의 기록: 중립모드에서 q를 누른 상태에서 다음 원하는 이름을 입력하면 된다. 그러면 --recording--이라고 뜨며, 기록이 시작된다.
+2) 매크로를 기록한다.
+3) 매크로 기록종료: 기록을 마칠려면 q를 다시 누르면 된다. 이렇면 --recording--이 없어지며, 기록이 중단된다.
+4) 기록한 매크로 다시 실행: @이름 이렇게 실행하면 된다. 숫자@이름 이렇게 사용하면 지정한 숫자 만큼 매크로를 실행한다. @@을 사용하면 방금 실행한 매크로에 대해 실행을 할 수 있다.
 
+매크로의 저장: 현재 편집중인 내용을 저장한 후 :e ~/.vimrc로 vimrc를 연다. -> 그리고 i를 입력해 Insert모드로 전환 후 저장할 매크로 이름을 변수로 하여 사용한 매크로를 저장한다.
+이 때, 
 
